@@ -13,7 +13,7 @@ def home_page():
 @login_required
 def market_page():
     purchase_form = PurchaseItemForm()
-    selling_form = SellItemForm
+    selling_form = SellItemForm()
     if request.method == "POST":
         #purchase item logic
         purchased_item = request.form.get('purchased_item')
